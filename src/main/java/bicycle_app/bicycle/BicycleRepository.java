@@ -1,4 +1,8 @@
 package bicycle_app.bicycle;
 
-public interface BicycleRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BicycleRepository extends JpaRepository<Bicycle, Long> {
 }
