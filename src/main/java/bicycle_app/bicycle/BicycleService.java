@@ -2,6 +2,7 @@ package bicycle_app.bicycle;
 
 import bicycle_app.manufacturer.ManufacturerService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -40,7 +41,8 @@ public class BicycleService {
         bicycleRepository.deleteById(id);
     }
 
-    public Bicycle changeManufacturerRelation(BicycleManufacturerRelationRequest bicycleManufacturerRelationRequest){
+    @Transactional
+    public Bicycle changeManufacturerRelation(BicycleManufacturerRelationRequest bicycleManufacturerRelationRequest) {
         var bicycle = bicycleRepository.findById(bicycleManufacturerRelationRequest.bicycleId()).orElse(null);
         var manufacturer = manufacturerService.getManufacturer(bicycleManufacturerRelationRequest.manufacturerId());
         if (bicycle == null || manufacturer == null) {

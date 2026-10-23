@@ -1,6 +1,5 @@
 package bicycle_app.bicycle;
 
-import bicycle_app.manufacturer.Manufacturer;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

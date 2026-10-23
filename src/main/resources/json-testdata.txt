@@ -1,0 +1,16 @@
+{
+    "bicycleName": "Trek 2000",
+    "bicycleColor": "Orange and white",
+    "bicycleModel": "Trek"
+}
+
+{
+    "manufacturerWebsite": "melon_bicycles@cycles.com",
+    "manufacturerPhoneNumber": "90904040",
+    "manufacturerName": "Melon Bicycles"
+}
+
+{
+    "bicycleId": 2,
+    "manufacturerId" : 2
+}
